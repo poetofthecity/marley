@@ -27,7 +27,6 @@ a:hover {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #e4d3ff;
 }
 
 .cursorFollower {
@@ -74,7 +73,7 @@ body {
 header {
   display: grid;
   place-items: center;
-  background-color: #ffffff;
+  background: #ffffff;
 }
 header .content-wrap {
   display: inline-block;
@@ -101,4 +100,63 @@ header .content-wrap .copyright {
   display: inline-block;
   font-size: 14px;
   color: #767676;
+}
+
+.home {
+  background: #f3f3f3;
+}
+
+.home-overlay {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/noise-light.png");
+  background-repeat: repeat;
+}
+.home-overlay .home-content {
+  display: flex;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+.home-img {
+  background-image: url("/assets/1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 250px;
+  animation: morph 8s ease-in-out infinite 1s;
+  background-blend-mode: multiply;
+  box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
+}
+
+.home-text {
+  width: 460px;
+  margin-left: 80px;
+}
+.home-text .home-heading {
+  margin-bottom: 15px;
+}
+.home-text .home-heading h1 {
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-weight: 800;
+}
+.home-text .home-pera p {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 500;
+  color: #767676;
+  line-height: 30px;
 }/*# sourceMappingURL=style.css.map */
