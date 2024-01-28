@@ -1,0 +1,11 @@
+// files are arranged in this order for all projects
+// setup live sass compiler in vs code and compiler at path '/css'
+
+// imports
+@import "base";
+@import "layout";
+@import "components";
+@import "utils";
+
+// header
+@import "header";

@@ -1,0 +1,35 @@
+// _utils.scss
+
+// mixins breakpoints
+@mixin bp($point) {
+
+	$tab: "(max-width: 780px)";
+	$small: "(max-width: 1100px)";
+	$mediam: "(max-width: 1300px)";
+	$large: "(max-width: 1600px)";
+
+	@if $point ==papa-bear {
+		@media #{$large} {
+			@content;
+		}
+	}
+
+	@else if $point ==mama-bear {
+		@media #{$mediam} {
+			@content;
+		}
+	}
+
+	@else if $point ==baby-bear {
+		@media #{$small} {
+			@content;
+		}
+	}
+
+	@else if $point ==tab {
+		@media #{$tab} {
+			@content;
+		}
+	}
+
+}

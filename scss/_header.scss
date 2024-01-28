@@ -1,0 +1,40 @@
+header {
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+
+  .content-wrap {
+    display: inline-block;
+    width: 200px;
+
+    .branding {
+      a {
+        display: inline-block;
+        font-family: "Satisfy", cursive;
+        font-size: 48px;
+        color: #111111;
+      }
+    }
+
+    .nav-bar {
+      padding: 35px 0;
+
+      li {
+        a {
+          display: inline-block;
+          font-size: 15px;
+          padding-bottom: 10px;
+        }
+        .active {
+          color: #111111;
+        }
+      }
+    }
+
+    .copyright {
+      display: inline-block;
+      font-size: 14px;
+      color: #767676;
+    }
+  }
+}
